@@ -11,13 +11,13 @@ The app will consist of a Mariadb database to hold subscriber information and fa
 
 ## TODO:
   - [x] Identify and test a podman database container-image suitable for the project goals
-  - [ ] Define the database tables necessary for the project
+  - [x] Define the database tables necessary for the project
   - [x] Identify a podman container-image suitable for running the python backend
-  - [ ] Write the backend python to take subscription requests, serve potato facts, and interface with the SMS gateway
+  - [ ] Write the backend python to serve potato facts, and interface with the SMS gateway
   - [ ] Rent time on an SMS gateway provider
   - [ ] Create a podman-compose file to start both containers together
   - [ ] QA/UAT
   - [ ] RELEASE
 
 ## OPTIONAL:
-  - [ ] Web front end
+  - [ ] Web front end to take subscription requests
