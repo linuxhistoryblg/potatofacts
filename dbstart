@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# These steps will be handled by the compose file
+# in the completed project.
+
 # Start rhel8/mariadb-105 
 podman run -d --rm --name db \
 -e MYSQL_USER=user -e MYSQL_PASSWORD=pass -e MYSQL_DATABASE=db -e MYSQL_ROOT_PASSWORD=pass \
