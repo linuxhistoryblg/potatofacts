@@ -1,0 +1,18 @@
+# Notes for potatofacts
+
+- use the mysql connector:
+- installation:
+```
+install mysql-connector-python3
+```
+- example useage:
+
+```
+import mysql.connector
+db = mysql.connector.connect(user'user',password='pass',host='127.0.0.1',database='db')
+db = mysql.connector.connect(user='user',password='pass',host='127.0.0.1',database='db')
+cursor = db.cursor()
+cursor.execute("select * from subscriber")
+cursor.fetchall()
+cursor.close()
+```
