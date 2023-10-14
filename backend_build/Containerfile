@@ -1,3 +1,5 @@
 FROM registry.redhat.io/rhel9/python-311:latest
+USER 1001
+RUN pip install --upgrade pip;pip install mysql-connector-python
 COPY --chown=default:root ./sleep.py /opt/app-root/bin/
 ENTRYPOINT [ "/opt/app-root/bin/python", "/opt/app-root/bin/sleep.py" ]
