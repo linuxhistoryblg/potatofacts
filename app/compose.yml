@@ -29,11 +29,10 @@ services:
       MYSQL_ROOT_PASSWORD: pass
     depends_on:
       - db
-  python:
+        
+  backend:
     container_name: backend
-    image: registry.redhat.io/rhel9/python-311
+    image: quay.io/dandavisredhat/potatofacts/backend:latest
     restart: unless-stopped
     networks:
       - dbnet
-    command: /bin/sh
-
