@@ -25,7 +25,7 @@ services:
     environment:
       MYSQL_USER: user 
       MYSQL_PASSWORD: pass 
-      MYSQL_DATABASE: db
+      MYSQL_DATABASE: Potatofacts
       MYSQL_ROOT_PASSWORD: pass
         
   backend:
