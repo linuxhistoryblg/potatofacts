@@ -1,77 +1,39 @@
-- The first permanent potato patches in North America were established in 1719 near Londonderry, New Hampshire, USA.
-
-- Today potatoes are grown in all 50 states of the USA and in about 125 countries throughout the world. 
-
-- People have been growing potatoes for at least 7,000 years!
-
-- In 1995, potatoes became the first vegetable to be grown in space!
-
-- The sweet potato belongs in the same family as morning glories while the white potato belongs to the same group as tomatoes, tobacco, chile pepper, eggplant and the petunia.
-
-- The potato is about 80% water and 20% solids.
-
-- An 8 ounce baked or boiled potato has only about 100 calories.
-
-- The average American eats about 124 pounds of potatoes per year while Germans eat about twice as much.
-
-- In 1974, an Englishman named Eric Jenkins grew 370 pounds of potatoes from one plant.
-
-- Thomas Jefferson gets the credit for introducing “french fries” to America when he served them at a White House dinner.
-
-- According to the Guinness Book of World Records, the largest potato grown was 7 pounds 1 ounce by J. East (1953) and J. Busby (1982) of Great Britain.
-
-- The world’s largest potato chip crisp (on exhibit at the Potato Museum) was produced by the Pringle’s Company in Jackson, TN, in 1990. It measures 23″ x 14.5″.
-
-- In October 1995, the potato became the first vegetable to be grown in space. NASA and the University of Wisconsin, Madison, created the technology with the goal of feeding astronauts on long space voyages, and eventually, feeding future space colonies.
-
-- Potato blossoms used to be a big hit in royal fashion. Potatoes first became fashionable when Marie Antoinette paraded through the French countryside wearing potato blossoms in her hair.
-
-- The Incas of Peru were the first to cultivate potatoes around 8000 BC to 5000 BC.
-
-- In 1536 Spanish Conquistadors discovered just how delicious potatoes were and carried them back to Europe.
-
-- In 1589 Sir Walter Raleigh introduced potatoes to Ireland.  Early growers discovered that they could provide food for ten people off of just one acre of land, much better than wheat or oats.
-
-- Potatoes came to the colonies in 1621 when the Governor of Bermuda, Nathaniel Butler sent two large cedar chests containing potatoes to Jamestown.
-
-- Potatoes were popularized in France in the 18th century.  King Louis XIV and Antoine Parmentier hosted a dinner that featured only dishes with potato.  Benjamin Franklin was in attendance at the 1767 dinner.  Twenty different dishes were served!
-
-- In Shakespeare’s time the potato was known simply as the “apple of love.”
-
-- Vincent Van Gough painted four still-life paintings featuring potatoes.
-
-- Thank Thomas Jefferson next time you have french fries.  He served them in the White House!
-
-- Potatoes didn’t arrive in Idaho until 1836.
-
-- The Irish potato famine occurred in the 1840s, caused by the oomycete, Phytophthora infestans, meaning "plant destroyer."  Before the disease struck, Irish families ate nearly ten pounds of potato a day.  Almost one million people died from starvation or disease during that time period.
-
-- Potatoes first appeared in Montana in 1841. The first crop was grown in the Bitteroot Valley at St. Mary’s Mission by Father DeSmet.
-
-- A complaining railroad magnate earned a chastisement for complaints from chef George Crum, resulting in “Saratoga Crunch Chips,” known to us as potato chips in 1853. A delicious punishment!
-
-- During the gold rush, potatoes were highly valued.  At a time when gold was more plentiful than nutrition sources, you might say that potatoes were worth their weight in gold!
-
-- In 1860, the first Montana commercial crop was grown in Virginia City at the mining camps.  This was especially significant because this was miners only source of vitamin C (45 % from just one medium spud)!
-
-- Russet Burbank has been around since 1872!
-
-- In 1903, Parker Brothers had a game called “The Potato Race.”
-
-- In Germany there is a monument to the potato with the inscription “ To God and Francis Drake, who brought to Europe for the everlasting benefit of the poor-the Potato.”
-
-- The word potato comes from the Spanish word patata.
-
-- Potato is the 4th most important crop worldwide (but 1st in our book!)
-
-- The Irish Potato famine gave rise to the field of Plant Pathology!
-
-- 35% of the potato crop is turned into french fries, 28% is used for fresh, and 13% goes to chips!
-
-- The Potato Museum in Washington DC contains 2000 potato artifacts.
-
-- A potato has more potassium than a banana!
-
-- 2008 was the U.N. International Year of the Potato.
-
-- August 13 is National Potato Day, don’t forget to celebrate!
+The first permanent potato patches in North America were established in 1719 near Londonderry, New Hampshire, USA.
+Today potatoes are grown in all 50 states of the USA and in about 125 countries throughout the world. 
+People have been growing potatoes for at least 7,000 years!
+In 1995, potatoes became the first vegetable to be grown in space!
+The sweet potato belongs in the same family as morning glories while the white potato belongs to the same group as tomatoes, tobacco, chile pepper, eggplant and the petunia.
+The potato is about 80% water and 20% solids.
+An 8 ounce baked or boiled potato has only about 100 calories.
+The average American eats about 124 pounds of potatoes per year while Germans eat about twice as much.
+In 1974, an Englishman named Eric Jenkins grew 370 pounds of potatoes from one plant.
+Thomas Jefferson gets the credit for introducing “french fries” to America when he served them at a White House dinner.
+According to the Guinness Book of World Records, the largest potato grown was 7 pounds 1 ounce by J. East (1953) and J. Busby (1982) of Great Britain.
+The world’s largest potato chip crisp (on exhibit at the Potato Museum) was produced by the Pringle’s Company in Jackson, TN, in 1990. It measures 23″ x 14.5″.
+In October 1995, the potato became the first vegetable to be grown in space. NASA and the University of Wisconsin, Madison, created the technology with the goal of feeding astronauts on long space voyages, and eventually, feeding future space colonies.
+Potato blossoms used to be a big hit in royal fashion. Potatoes first became fashionable when Marie Antoinette paraded through the French countryside wearing potato blossoms in her hair.
+The Incas of Peru were the first to cultivate potatoes around 8000 BC to 5000 BC.
+In 1536 Spanish Conquistadors discovered just how delicious potatoes were and carried them back to Europe.
+In 1589 Sir Walter Raleigh introduced potatoes to Ireland.  Early growers discovered that they could provide food for ten people off of just one acre of land, much better than wheat or oats.
+Potatoes came to the colonies in 1621 when the Governor of Bermuda, Nathaniel Butler sent two large cedar chests containing potatoes to Jamestown.
+Potatoes were popularized in France in the 18th century.  King Louis XIV and Antoine Parmentier hosted a dinner that featured only dishes with potato.  Benjamin Franklin was in attendance at the 1767 dinner.  Twenty different dishes were served!
+In Shakespeare’s time the potato was known simply as the “apple of love.”
+Vincent Van Gough painted four still-life paintings featuring potatoes.
+Thank Thomas Jefferson next time you have french fries.  He served them in the White House!
+Potatoes didn’t arrive in Idaho until 1836.
+The Irish potato famine occurred in the 1840s, caused by the oomycete, Phytophthora infestans, meaning "plant destroyer."  Before the disease struck, Irish families ate nearly ten pounds of potato a day.  Almost one million people died from starvation or disease during that time period.
+Potatoes first appeared in Montana in 1841. The first crop was grown in the Bitteroot Valley at St. Mary’s Mission by Father DeSmet.
+A complaining railroad magnate earned a chastisement for complaints from chef George Crum, resulting in “Saratoga Crunch Chips,” known to us as potato chips in 1853. A delicious punishment!
+During the gold rush, potatoes were highly valued.  At a time when gold was more plentiful than nutrition sources, you might say that potatoes were worth their weight in gold!
+In 1860, the first Montana commercial crop was grown in Virginia City at the mining camps.  This was especially significant because this was miners only source of vitamin C (45 % from just one medium spud)!
+Russet Burbank has been around since 1872!
+In 1903, Parker Brothers had a game called “The Potato Race.”
+In Germany there is a monument to the potato with the inscription “ To God and Francis Drake, who brought to Europe for the everlasting benefit of the poor-the Potato.”
+The word potato comes from the Spanish word patata.
+Potato is the 4th most important crop worldwide (but 1st in our book!)
+The Irish Potato famine gave rise to the field of Plant Pathology!
+35% of the potato crop is turned into french fries, 28% is used for fresh, and 13% goes to chips!
+The Potato Museum in Washington DC contains 2000 potato artifacts.
+A potato has more potassium than a banana!
+2008 was the U.N. International Year of the Potato.
+August 13 is National Potato Day, don’t forget to celebrate!

@@ -25,10 +25,8 @@ services:
     environment:
       MYSQL_USER: user 
       MYSQL_PASSWORD: pass 
-      MYSQL_DATABASE: db 
+      MYSQL_DATABASE: db
       MYSQL_ROOT_PASSWORD: pass
-    depends_on:
-      - db
         
   backend:
     container_name: backend
