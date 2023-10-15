@@ -43,9 +43,30 @@ print(sublist)
 
 # Create lastfact list
 factlist = []
-for sub in sublist:
-  factlist.append(sub[2])
+for item in sublist:
+  factlist.append(item[2])
 print(factlist)
+
+# Open new db connection
+user_cnx = mysql.connector.connect(**user_config)
+cursor = user_cnx.cursor()
+
+# Populate factextlist with next fact for subscriber
+facttextlist = []
+for i in factlist:
+    cursor.execute(f'SELECT facttext FROM facts WHERE factid = {i}')
+    facttextlist.append(cursor.fetchall()[0][0])
+cursor.close()
+user_cnx.close()
+
+# Populate subscriber list (sublist) with next fact
+for subscriber in sublist:
+    for facttext in facttextlist:
+       subscriber[2] = facttext
+
+## Todo: 
+# 1. Update subscriber:lastfact ++1
+# 2. Send sublist into smsgateway api
 
 
 
