@@ -29,19 +29,19 @@ cnx = mysql.connector.connect(**user_config)
 cursor = cnx.cursor()
 
 # Query for subsciber information
-query = ("SELECT firstname,smsnumb,lastfact from subscriber")
+query = ("SELECT firstname,smsnumb,nextfact from subscriber")
 
-# Exec query and populate sublist => list of lists holding name,number,lastfact
+# Exec query and populate sublist => list of lists holding name,number,nextfact
 cursor.execute(query)
 sublist = []
-for name,smsnumb,lastfact in cursor:
-  sublist.append([name,smsnumb,lastfact]) 
+for name,smsnumb,nextfact in cursor:
+  sublist.append([name,smsnumb,nextfact]) 
 
 # Close db connection
 cnx.close();cursor.close()
 print(sublist)
 
-# Create lastfact list
+# Create nextfact list
 factlist = []
 for item in sublist:
   factlist.append(item[2])
@@ -64,8 +64,10 @@ for subscriber in sublist:
     for facttext in facttextlist:
        subscriber[2] = facttext
 
+print(sublist)
+
 ## Todo: 
-# 1. Update subscriber:lastfact ++1
+# 1. Update subscriber:nextfact ++1
 # 2. Send sublist into smsgateway api
 
 

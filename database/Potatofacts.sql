@@ -86,7 +86,7 @@ CREATE TABLE `subscriber` (
   `entid` int(11) NOT NULL,
   `firstname` tinytext NOT NULL,
   `smsnumb` int(11) NOT NULL,
-  `lastfact` int(11) NOT NULL
+  `nextfact` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
