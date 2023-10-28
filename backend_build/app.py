@@ -73,7 +73,6 @@ print(sublist)
 # 1. Update subscriber:nextfact ++1
 # 2. Send sublist into smsgateway api
 
-<<<<<<< HEAD
 # Create a ro db connection
 root_cnx = mysql.connector.connect(**root_config)
 
@@ -96,5 +95,3 @@ root_cnx.close()
 
 
 
-=======
->>>>>>> refs/remotes/origin/main
