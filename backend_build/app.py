@@ -1,6 +1,8 @@
-# app.py - Dan Davis
-# Queries db container and formats
-# output to forward to smsgateway
+'''
+app.py - Dan Davis
+Queries db container and formats
+output to forward to smsgateway
+'''
 
 import mysql.connector
 
@@ -29,50 +31,45 @@ cnx = mysql.connector.connect(**user_config)
 cursor = cnx.cursor()
 
 # Query for subsciber information
-query = ("SELECT firstname,smsnumb,nextfact from subscriber")
+query_subscriber = "SELECT firstname,smsnumb,nextfact from subscriber"
 
 # Exec query and populate sublist => list of lists holding name,number,nextfact
-cursor.execute(query)
+cursor.execute(query_subscriber)
 sublist = []
-for name,smsnumb,nextfact in cursor:
-  sublist.append([name,smsnumb,nextfact]) 
+for name, smsnumb, nextfact in cursor:
+    sublist.append([name, smsnumb, nextfact])
 
 # Close db connection
-cnx.close();cursor.close()
-print(sublist)
+cnx.close()
+cursor.close()
+print("Subscriber List: ", sublist)
 
 # Create nextfact list
-factlist = []
+fact_list = []
 for item in sublist:
-  factlist.append(item[2])
-print(factlist)
+    fact_list.append(item[2])
+print("Nextfact_list: ", fact_list)
 
 # Open new db connection
 user_cnx = mysql.connector.connect(**user_config)
 cursor = user_cnx.cursor()
 
 # Populate factextlist with next fact for subscriber
-facttextlist = []
-for i in factlist:
+fact_text_list = []
+for i in fact_list:
     cursor.execute(f'SELECT facttext FROM facts WHERE factid = {i}')
-    facttextlist.append(cursor.fetchall()[0][0])
+    fact_text_list.append(cursor.fetchall()[0][0])
 cursor.close()
 user_cnx.close()
 
 # Populate subscriber list (sublist) with next fact
 for subscriber in sublist:
-    for facttext in facttextlist:
-       subscriber[2] = facttext
+    for facttext in fact_text_list:
+        subscriber[2] = facttext
 
 print(sublist)
 
-## Todo: 
+# Todo:
 # 1. Update subscriber:nextfact ++1
 # 2. Send sublist into smsgateway api
-
-
-
-
-
-
 
