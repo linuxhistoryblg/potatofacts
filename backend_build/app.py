@@ -70,9 +70,8 @@ def substitute_fact_for_factid(fact_list, sublist):
     print("Subscribers: ", sublist)
     
     # Populate subscriber list (sublist) with next fact
-    for subscriber in sublist:
-        for facttext in fact_text_list:
-            subscriber[2] = facttext.rstrip()
+    for i in sublist:
+        i[2] = fact_text_list[i[2] - 1].rstrip()
     
     return sublist
 
@@ -84,9 +83,9 @@ sublist, fact_list = query_db()
 
 # Call substitute_fact_for_factid:
 sublist = substitute_fact_for_factid(fact_list, sublist)
-#print(sublist)
+print(sublist)
 
-#
+
 ## Todo:
 ## 1. Update subscriber:nextfact ++1
 ## 2. Send sublist into smsgateway api
