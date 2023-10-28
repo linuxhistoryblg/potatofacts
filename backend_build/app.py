@@ -68,6 +68,22 @@ for subscriber in sublist:
 # 1. Update subscriber:lastfact ++1
 # 2. Send sublist into smsgateway api
 
+# Create a ro db connection
+root_cnx = mysql.connector.connect(**root_config)
+
+# Create a cursor
+root_cursor = root_cnx.cursor()
+
+# Query for subsciber information
+for i in range(4,10):
+    query = f"UPDATE `subscriber` SET `lastfact`='{i}' WHERE `entid` = 1"
+    root_cursor.execute(query)
+    root_cnx.commit()
+
+root_cursor.close()
+root_cnx.close()
+
+
 
 
 

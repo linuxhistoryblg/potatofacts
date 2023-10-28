@@ -43,7 +43,7 @@ CREATE TABLE `facts` (
 CREATE TABLE `subscriber` (
   `entid` int(11) DEFAULT NULL,
   `smsnumb` int(11) DEFAULT NULL,
-  `lastfact` int(11) DEFAULT NULL
+  `nextfact` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 COMMIT;
 
