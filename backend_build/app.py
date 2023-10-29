@@ -64,51 +64,56 @@ def substitute_fact_for_factid(fact_list, sublist):
         fact_text_list.append(cursor.fetchall()[0][0])
     cursor.close()
     user_cnx.close()
-
     
-    print("Subscriber facts: ", fact_text_list)
-    print("Subscribers: ", sublist)
     
     # Populate subscriber list (sublist) with next fact
-    for i in sublist:
-        i[2] = fact_text_list[i[2] - 1].rstrip()
+    print("Sublist", sublist)
+    print("fact_text_list: ", fact_text_list)
+
+    for i in range(len(sublist)):
+        sublist[i][2] = fact_text_list[i].rstrip()
     
     return sublist
 
 
 # Call query_db:
 sublist, fact_list = query_db()
-#print("Subscriber List: ", sublist)
-#print("Nextfact_list: ", fact_list)
+
+# Populate next_fact_id: next_fact_id = current 'nextfact' + 1
+next_fact_id = [item[2] + 1 for item in sublist]
+
+# Populate user list: user_list = sublist[0]
+user_list = [user[0] for user in sublist]
 
 # Call substitute_fact_for_factid:
 sublist = substitute_fact_for_factid(fact_list, sublist)
-print(sublist)
 
+# Zip next_fact_id anduser list
+user_and_next_fact = list(zip(next_fact_id, user_list))
 
-## Todo:
-## 1. Update subscriber:nextfact ++1
-## 2. Send sublist into smsgateway api
-#
-## Create a ro db connection
-#root_cnx = mysql.connector.connect(**root_config)
-#
+# Update nextfact field in db:
+
+# Create a rw db connection
+root_cnx = mysql.connector.connect(**root_config)
+
 ## Create a cursor
-#root_cursor = root_cnx.cursor()
-#
-## Query for subsciber information
-#for i in range(4,10):
-#    query = f"UPDATE `subscriber` SET `nextfact`='{i}' WHERE `entid` = 1"
-#    root_cursor.execute(query)
-#    root_cnx.commit()
-#
-#root_cursor.close()
-#root_cnx.close()
-#
+root_cursor = root_cnx.cursor()
+
+# Query for subsciber information
+for fact_id,user_name in user_and_next_fact:
+    query = f"UPDATE `subscriber` SET `nextfact`='{fact_id}' WHERE `firstname` = '{user_name}'"
+    root_cursor.execute(query)
+    root_cnx.commit()
+
+root_cursor.close()
+root_cnx.close()
 
 
 
-
+# Todo:
+# 1. Update subscriber:nextfact ++1 DONE (10/29)
+# 2. Remove subscriber when they have received all available potatofacts
+# 2. Send sublist into smsgateway api
 
 
 

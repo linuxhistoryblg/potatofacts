@@ -44,6 +44,7 @@ INSERT INTO `facts` (`factid`, `facttext`) VALUES
 (5, 'The sweet potato belongs in the same family as morning glories while the white potato belongs to the same group as tomatoes, tobacco, chile pepper, eggplant and the petunia.\r\n'),
 (6, 'The potato is about 80% water and 20% solids.\r\n'),
 (7, 'An 8 ounce baked or boiled potato has only about 100 calories.\r\n'),
+(8, 'Despite its appearance, potato is made up of 80% water and only 20% of solid.\r\n'),
 (9, 'In 1974, an Englishman named Eric Jenkins grew 370 pounds of potatoes from one plant.\r\n'),
 (10, 'Thomas Jefferson gets the credit for introducing “french fries” to America when he served them at a White House dinner.\r\n'),
 (11, 'According to the Guinness Book of World Records, the largest potato grown was 7 pounds 1 ounce by J. East (1953) and J. Busby (1982) of Great Britain. \r\n'),
@@ -74,7 +75,8 @@ INSERT INTO `facts` (`factid`, `facttext`) VALUES
 (36, 'The Potato Museum in Washington DC contains 2000 potato artifacts.\r\n'),
 (37, 'A potato has more potassium than a banana!\r\n'),
 (38, '2008 was the U.N. International Year of the Potato.\r\n'),
-(39, 'August 13 is National Potato Day, dont forget to celebrate!\r\n');
+(39, 'August 13 is National Potato Day, dont forget to celebrate!\r\n'),
+(40, 'You have received all the potato facts! I will unsubscribe you now. Thanks for being a good spud!');
 
 -- --------------------------------------------------------
 
