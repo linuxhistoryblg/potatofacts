@@ -91,9 +91,11 @@ user_list = [user[0] for user in sublist]
 sublist = substitute_fact_for_factid(fact_list, sublist)
 
 # If subscriber has received all facts, remove them from subscriber table
+## Create new rw db connection:
 root_cnx = mysql.connector.connect(**root_config)
 root_cursor = root_cnx.cursor()
-# ['dan', 5551212, 'EOF']
+
+## loop sublist and delete any where sublist[i][2] == 'EOF'
 for subscriber in sublist:
     if subscriber[2] == 'EOF':
         query = f"DELETE from `subscriber` WHERE `smsnumb` = '{subscriber[1]}'"
@@ -102,18 +104,15 @@ for subscriber in sublist:
 root_cursor.close()
 root_cnx.close()
 
-# Zip next_fact_id anduser list
+# Update nextfact field in db:
+## Zip next_fact_id anduser list
 user_and_next_fact = list(zip(next_fact_id, user_list))
 
-# Update nextfact field in db:
-
-# Create a rw db connection
+## Create a rw db connection and cursor
 root_cnx = mysql.connector.connect(**root_config)
-
-## Create a cursor
 root_cursor = root_cnx.cursor()
 
-# Query for subsciber information
+## Query for subsciber information
 for fact_id,user_name in user_and_next_fact:
     query = f"UPDATE `subscriber` SET `nextfact`='{fact_id}' WHERE `firstname` = '{user_name}'"
     root_cursor.execute(query)
