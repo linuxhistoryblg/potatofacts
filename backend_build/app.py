@@ -61,18 +61,20 @@ def substitute_fact_for_factid(fact_list, sublist):
     fact_text_list = []
     for i in fact_list:
         cursor.execute(f'SELECT facttext FROM facts WHERE factid = {i}')
-        fact_text_list.append(cursor.fetchall()[0][0])
+        try:
+            fact_text_list.append(cursor.fetchall()[0][0])
+        except IndexError:
+            print("Encountered EOF")
+            fact_text_list.append('EOF')
     cursor.close()
     user_cnx.close()
     
     
     # Populate subscriber list (sublist) with next fact
-    print("Sublist", sublist)
-    print("fact_text_list: ", fact_text_list)
-
     for i in range(len(sublist)):
         sublist[i][2] = fact_text_list[i].rstrip()
     
+    print("Sublist", sublist)
     return sublist
 
 
@@ -87,6 +89,18 @@ user_list = [user[0] for user in sublist]
 
 # Call substitute_fact_for_factid:
 sublist = substitute_fact_for_factid(fact_list, sublist)
+
+# If subscriber has received all facts, remove them from subscriber table
+root_cnx = mysql.connector.connect(**root_config)
+root_cursor = root_cnx.cursor()
+# ['dan', 5551212, 'EOF']
+for subscriber in sublist:
+    if subscriber[2] == 'EOF':
+        query = f"DELETE from `subscriber` WHERE `smsnumb` = '{subscriber[1]}'"
+        root_cursor.execute(query)
+        root_cnx.commit()
+root_cursor.close()
+root_cnx.close()
 
 # Zip next_fact_id anduser list
 user_and_next_fact = list(zip(next_fact_id, user_list))
@@ -112,8 +126,9 @@ root_cnx.close()
 
 # Todo:
 # 1. Update subscriber:nextfact ++1 DONE (10/29)
-# 2. Remove subscriber when they have received all available potatofacts
-# 2. Send sublist into smsgateway api
+# 2. Remove subscriber when they have received all available potatofacts DONE(10/29)
+# 3. Make app.py run in a non-terminating loop
+# 4. Send sublist into smsgateway api
 
 
 
